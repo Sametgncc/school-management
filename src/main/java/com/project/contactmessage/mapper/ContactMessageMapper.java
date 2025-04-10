@@ -3,13 +3,16 @@ package com.project.contactmessage.mapper;
 import com.project.contactmessage.dto.ContactMessageRequest;
 import com.project.contactmessage.dto.ContactMessageResponse;
 import com.project.contactmessage.entity.ContactMessage;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
+@Component
 public class ContactMessageMapper {
 
-    // pojo --------> dto
-    public ContactMessageResponse contactMessagetoRespones(ContactMessage contactMessage ){
+    // pojo --------> dt
+
+    public ContactMessageResponse contactMessageToResponse(ContactMessage contactMessage) {
         return ContactMessageResponse.builder()
                 .name(contactMessage.getName())
                 .subject(contactMessage.getSubject())
@@ -22,7 +25,8 @@ public class ContactMessageMapper {
 
     // pojo ------------->dto
 
-    public ContactMessage requesToContactMessage(ContactMessageRequest contactMessageRequest){
+
+    public ContactMessage requestToContactMessage(ContactMessageRequest contactMessageRequest) {
         return ContactMessage.builder()
                 .name(contactMessageRequest.getName())
                 .message(contactMessageRequest.getMessage())
@@ -30,15 +34,6 @@ public class ContactMessageMapper {
                 .email(contactMessageRequest.getEmail())
                 .dateTime(LocalDateTime.now())
                 .build();
-
-    }
-
-
-    public ContactMessageResponse contactMessageToResponse(ContactMessage savedData) {
-
-    }
-
-    public ContactMessage requestToContactMessage(ContactMessageRequest contactMessageRequest) {
 
     }
 }

@@ -30,7 +30,7 @@ public class ContactMessageService {
 
     public ResponseMessage<ContactMessageResponse> save(ContactMessageRequest contactMessageRequest) {
 
-        ContactMessage contactMessage = contactMessageMapper.requestToContactMessage(contactMessageRequest);
+        ContactMessage contactMessage =  contactMessageMapper.requestToContactMessage(contactMessageRequest);
         ContactMessage savedData = contactMessageRepository.save(contactMessage);
 
         return ResponseMessage.<ContactMessageResponse>builder()

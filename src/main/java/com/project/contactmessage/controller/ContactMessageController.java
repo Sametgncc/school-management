@@ -1,12 +1,12 @@
 package com.project.contactmessage.controller;
 
-
 import com.project.contactmessage.dto.ContactMessageRequest;
 import com.project.contactmessage.dto.ContactMessageResponse;
 import com.project.contactmessage.entity.ContactMessage;
 import com.project.contactmessage.service.ContactMessageService;
 import com.project.payload.response.business.ResponseMessage;
 import lombok.RequiredArgsConstructor;
+import org.apache.catalina.LifecycleState;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,11 +21,9 @@ public class ContactMessageController {
 
     private final ContactMessageService contactMessageService;
 
-    @PostMapping("/save")
-    public ResponseMessage<ContactMessageResponse> saveContact(@Valid @RequestBody ContactMessageRequest contactMessageRequest) {
-        return contactMessageService.save(contactMessageRequest);
-
-
+    @PostMapping("/save") // http://localhost:8080/contactMessages/save + POST + JSON
+    public ResponseMessage<ContactMessageResponse> save(@Valid @RequestBody ContactMessageRequest contactMessageRequest){
+        return  contactMessageService.save(contactMessageRequest);
     }
 
     @GetMapping("/getAll") // http://localhost:8080/contactMessages/getAll + GET
@@ -36,7 +34,7 @@ public class ContactMessageController {
             @RequestParam(value = "type", defaultValue = "desc") String type
     ){
         return contactMessageService.getAll(page,size,sort,type);
-}
+    }
 
     @GetMapping("/searchByEmail")  // http://localhost:8080/contactMessages/searchByEmail?email=aaa@bbb.com  + GET
     public Page<ContactMessageResponse> searchByEmail(
@@ -60,6 +58,7 @@ public class ContactMessageController {
         return contactMessageService.searchBySubject(subject,page,size,sort,type);
     }
 
+    // ODEV : No Content Type 204 kodu
     @DeleteMapping("/deleteById/{contactMessageId}") // http://localhost:8080/contactMessages/deleteById/2 + DELETE
     public ResponseEntity<String> deleteByIdPath(@PathVariable Long contactMessageId){
         return ResponseEntity.ok(contactMessageService.deleteById(contactMessageId));

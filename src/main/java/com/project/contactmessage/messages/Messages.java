@@ -1,7 +1,6 @@
 package com.project.contactmessage.messages;
 
 
-
 public class Messages {
 
     public static final String NOT_FOUND_MESSAGE = "Message Not Found";
