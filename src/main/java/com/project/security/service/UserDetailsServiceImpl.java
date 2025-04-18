@@ -10,14 +10,14 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-public class UserDetailsServiceImpl  implements UserDetailsService {
+public class UserDetailsServiceImpl implements UserDetailsService {
 
     private final UserRepository userRepository;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        User user  =  userRepository.findByUsernameEquals(username);
+        User user = userRepository.findByUsernameEquals(username);
 
         if(user != null){
             return new UserDetailsImpl(
@@ -26,11 +26,9 @@ public class UserDetailsServiceImpl  implements UserDetailsService {
                     user.getName(),
                     false,
                     user.getPassword(),
-                    user.getUserRole().getRoleType().name(),  // name i mathod ile cagirmak lazim
-                    user.getSsn()
-                    );
+                    user.getUserRole().getRoleType().name(),
+                    user.getSsn());
         }
-        throw  new UsernameNotFoundException("User' " + username + " not found");
-
+        throw new UsernameNotFoundException("User' " + username + " not found");
     }
 }
