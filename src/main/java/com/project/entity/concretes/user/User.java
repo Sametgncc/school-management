@@ -12,11 +12,11 @@ import lombok.*;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Locale;
 import java.util.Set;
 
 @Entity
 @Table(name = "t_user")
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -36,18 +36,21 @@ public class User {
 
     private String name;
 
-    private String suerName;
+    private String surname;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-    private LocalDate birthDate;
+    private LocalDate birthDay;
 
     private String birthPlace;
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)  // kapsullemis oluyoruz guvenlik sebeplerinden dolayi
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
     @Column(unique = true)
     private String phoneNumber;
+
+    @Column(unique = true)
+    private String email;
 
     private Boolean built_in;
 
@@ -61,19 +64,18 @@ public class User {
 
     private Boolean isAdvisor;
 
-    private Long advisorTeacherId; // this is need for the student write id for teacher
+    private Long advisorTeacherId; // bu Ogrenciler icin lazim, kendi rehber ogretmeninin
+    // id si buraya yazilacak
 
-    @Enumerated(EnumType.STRING) // string ifadeler ile kayit olmasi gerek
-    private Gender gender;
+    @Enumerated(EnumType.STRING)
+    private Gender gender; // MALE , male , Male , MalE
 
     @OneToOne
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // only write on db but not response this field
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private UserRole userRole;
 
-    @OneToMany(mappedBy = "teacher", cascade = CascadeType.REMOVE) // student giderse infolar da silinsin demis olduk
+    @OneToMany(mappedBy = "teacher", cascade = CascadeType.REMOVE)
     private List<StudentInfo> studentInfos;
-
-    // Not: LessonProgram - Meet
 
     @JsonIgnore
     @ManyToMany
@@ -94,7 +96,3 @@ public class User {
     private List<Meet> meetList;
 
 }
-
-
-
-
