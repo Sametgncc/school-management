@@ -1,5 +1,5 @@
-"2025-04-09 16:10:32,145 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 7484 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
-""2025-04-09 16:10:32,149 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
+"2025-04-09 16:10:32,145 INFO  [main] com.project.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 7484 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
+""2025-04-09 16:10:32,149 INFO  [main] com.project.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
 ""2025-04-09 16:10:32,614 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 ""2025-04-09 16:10:32,626 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
 ""2025-04-09 16:10:33,040 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
@@ -66,7 +66,7 @@
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at com.project.schoolmanagement.SchoolManagementApplication.main(SchoolManagementApplication.java:10)
+	at com.project.SchoolManagementApplication.main(SchoolManagementApplication.java:10)
 "2025-04-09 16:10:34,671 WARN  [main] org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator:HHH000342: Could not obtain connection to query metadata
 "org.postgresql.util.PSQLException: FATAL: database "student_management_db" does not exist
 	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
@@ -122,7 +122,7 @@
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at com.project.schoolmanagement.SchoolManagementApplication.main(SchoolManagementApplication.java:10)
+	at com.project.SchoolManagementApplication.main(SchoolManagementApplication.java:10)
 "2025-04-09 16:10:34,689 INFO  [main] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
 ""2025-04-09 16:10:34,855 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
 ""2025-04-09 16:10:35,908 ERROR [main] com.zaxxer.hikari.pool.HikariPool:HikariPool-1 - Exception during pool initialization.
@@ -179,7 +179,7 @@
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at com.project.schoolmanagement.SchoolManagementApplication.main(SchoolManagementApplication.java:10)
+	at com.project.SchoolManagementApplication.main(SchoolManagementApplication.java:10)
 "2025-04-09 16:10:35,910 WARN  [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper:SQL Error: 0, SQLState: 3D000
 ""2025-04-09 16:10:35,910 ERROR [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper:FATAL: database "student_management_db" does not exist
 ""2025-04-09 16:10:35,917 ERROR [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
@@ -206,7 +206,7 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
-	at com.project.schoolmanagement.SchoolManagementApplication.main(SchoolManagementApplication.java:10)
+	at com.project.SchoolManagementApplication.main(SchoolManagementApplication.java:10)
 Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
@@ -255,8 +255,8 @@ Caused by: org.postgresql.util.PSQLException: FATAL: database "student_managemen
 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
 	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:44)
 	... 35 common frames omitted
-"2025-04-09 16:18:47,631 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 21696 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
-""2025-04-09 16:18:47,633 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
+"2025-04-09 16:18:47,631 INFO  [main] com.project.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 21696 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
+""2025-04-09 16:18:47,633 INFO  [main] com.project.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
 ""2025-04-09 16:18:48,066 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 ""2025-04-09 16:18:48,077 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
 ""2025-04-09 16:18:48,477 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
@@ -281,13 +281,13 @@ This generated password is for development use only. Your security configuration
 
 ""2025-04-09 16:18:49,585 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22c29aa8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@129b69b2, org.springframework.security.web.context.SecurityContextPersistenceFilter@61b8c9de, org.springframework.security.web.header.HeaderWriterFilter@4c8d45cf, org.springframework.security.web.csrf.CsrfFilter@35b3c1f6, org.springframework.security.web.authentication.logout.LogoutFilter@68d8ae27, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@498e41a4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@31b6fb14, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12be4f83, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4b9f7edc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b490d5e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f6c4ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@eb1d475, org.springframework.security.web.session.SessionManagementFilter@4cc4d454, org.springframework.security.web.access.ExceptionTranslationFilter@df9d400, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51141f64]
 ""2025-04-09 16:18:49,624 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
-""2025-04-09 16:18:49,632 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Started SchoolManagementApplication in 2.306 seconds (JVM running for 2.759)
+""2025-04-09 16:18:49,632 INFO  [main] com.project.SchoolManagementApplication:Started SchoolManagementApplication in 2.306 seconds (JVM running for 2.759)
 ""2025-04-09 16:25:45,148 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
 ""2025-04-09 16:39:04,027 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 16:39:04,029 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
 ""2025-04-09 16:39:04,036 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
-""2025-04-09 16:40:30,343 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 18144 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
-""2025-04-09 16:40:30,345 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
+""2025-04-09 16:40:30,343 INFO  [main] com.project.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 18144 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
+""2025-04-09 16:40:30,345 INFO  [main] com.project.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
 ""2025-04-09 16:40:30,984 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 ""2025-04-09 16:40:31,000 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
 ""2025-04-09 16:40:31,618 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
@@ -312,13 +312,13 @@ This generated password is for development use only. Your security configuration
 
 ""2025-04-09 16:40:33,796 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37c87fcc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ca2be53, org.springframework.security.web.context.SecurityContextPersistenceFilter@f3876ef, org.springframework.security.web.header.HeaderWriterFilter@3cb04dd, org.springframework.security.web.csrf.CsrfFilter@173a5fad, org.springframework.security.web.authentication.logout.LogoutFilter@3c4059a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@192f5f39, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1c58d7be, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@78f5cbc5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@be616f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@df9d400, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ec427, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70697478, org.springframework.security.web.session.SessionManagementFilter@30fa8a6b, org.springframework.security.web.access.ExceptionTranslationFilter@35becbd4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1255de25]
 ""2025-04-09 16:40:33,885 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
-""2025-04-09 16:40:33,901 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Started SchoolManagementApplication in 4.015 seconds (JVM running for 4.719)
+""2025-04-09 16:40:33,901 INFO  [main] com.project.SchoolManagementApplication:Started SchoolManagementApplication in 4.015 seconds (JVM running for 4.719)
 ""2025-04-09 16:40:41,535 INFO  [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
 ""2025-04-09 16:40:45,648 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 16:40:45,650 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
 ""2025-04-09 16:40:45,654 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
-""2025-04-09 16:41:12,422 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 23016 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
-""2025-04-09 16:41:12,425 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
+""2025-04-09 16:41:12,422 INFO  [main] com.project.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 23016 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
+""2025-04-09 16:41:12,425 INFO  [main] com.project.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
 ""2025-04-09 16:41:12,958 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 ""2025-04-09 16:41:12,968 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
 ""2025-04-09 16:41:13,366 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
@@ -336,14 +336,14 @@ This generated password is for development use only. Your security configuration
 ""2025-04-09 16:41:14,409 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 16:41:14,446 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 ""2025-04-09 16:41:14,754 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
-""2025-04-09 16:41:14,764 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Started SchoolManagementApplication in 2.819 seconds (JVM running for 3.474)
+""2025-04-09 16:41:14,764 INFO  [main] com.project.SchoolManagementApplication:Started SchoolManagementApplication in 2.819 seconds (JVM running for 3.474)
 ""2025-04-09 16:45:19,619 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool:HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m11s705ms735µs600ns).
 ""2025-04-09 16:45:25,619 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
 ""2025-04-09 16:45:34,761 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 16:45:34,763 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
 ""2025-04-09 16:45:34,765 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
-""2025-04-09 16:45:38,722 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 29836 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
-""2025-04-09 16:45:38,725 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
+""2025-04-09 16:45:38,722 INFO  [main] com.project.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 29836 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
+""2025-04-09 16:45:38,725 INFO  [main] com.project.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
 ""2025-04-09 16:45:39,091 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 ""2025-04-09 16:45:39,100 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
 ""2025-04-09 16:45:39,436 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
@@ -361,13 +361,13 @@ This generated password is for development use only. Your security configuration
 ""2025-04-09 16:45:40,115 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 16:45:40,141 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 ""2025-04-09 16:45:40,358 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
-""2025-04-09 16:45:40,365 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Started SchoolManagementApplication in 1.904 seconds (JVM running for 2.348)
+""2025-04-09 16:45:40,365 INFO  [main] com.project.SchoolManagementApplication:Started SchoolManagementApplication in 1.904 seconds (JVM running for 2.348)
 ""2025-04-09 16:46:28,734 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
 ""2025-04-09 17:18:12,235 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 17:18:12,237 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
 ""2025-04-09 17:18:12,238 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
-""2025-04-09 17:23:48,896 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 2872 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
-""2025-04-09 17:23:48,898 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
+""2025-04-09 17:23:48,896 INFO  [main] com.project.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 2872 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
+""2025-04-09 17:23:48,898 INFO  [main] com.project.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
 ""2025-04-09 17:23:49,285 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 ""2025-04-09 17:23:49,293 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
 ""2025-04-09 17:23:49,605 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
@@ -385,12 +385,12 @@ This generated password is for development use only. Your security configuration
 ""2025-04-09 17:23:50,216 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 17:23:50,239 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 ""2025-04-09 17:23:50,450 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
-""2025-04-09 17:23:50,458 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Started SchoolManagementApplication in 1.853 seconds (JVM running for 2.28)
+""2025-04-09 17:23:50,458 INFO  [main] com.project.SchoolManagementApplication:Started SchoolManagementApplication in 1.853 seconds (JVM running for 2.28)
 ""2025-04-09 17:23:56,258 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 17:23:56,259 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
 ""2025-04-09 17:23:56,263 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
-""2025-04-09 17:23:57,839 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 17896 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
-""2025-04-09 17:23:57,841 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
+""2025-04-09 17:23:57,839 INFO  [main] com.project.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 17896 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
+""2025-04-09 17:23:57,841 INFO  [main] com.project.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
 ""2025-04-09 17:23:58,196 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 ""2025-04-09 17:23:58,206 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
 ""2025-04-09 17:23:58,501 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
@@ -408,12 +408,12 @@ This generated password is for development use only. Your security configuration
 ""2025-04-09 17:23:59,108 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 17:23:59,134 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 ""2025-04-09 17:23:59,326 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
-""2025-04-09 17:23:59,335 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Started SchoolManagementApplication in 1.867 seconds (JVM running for 2.289)
+""2025-04-09 17:23:59,335 INFO  [main] com.project.SchoolManagementApplication:Started SchoolManagementApplication in 1.867 seconds (JVM running for 2.289)
 ""2025-04-09 17:26:46,849 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 17:26:46,850 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
 ""2025-04-09 17:26:46,853 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
-""2025-04-09 17:29:20,535 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 27480 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
-""2025-04-09 17:29:20,536 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
+""2025-04-09 17:29:20,535 INFO  [main] com.project.SchoolManagementApplication:Starting SchoolManagementApplication using Java 17.0.14 on SametGNC with PID 27480 (C:\Users\samet\IdeaProjects\school-management\target\classes started by samet in C:\Users\samet\IdeaProjects\school-management)
+""2025-04-09 17:29:20,536 INFO  [main] com.project.SchoolManagementApplication:No active profile set, falling back to 1 default profile: "default"
 ""2025-04-09 17:29:20,911 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 ""2025-04-09 17:29:20,920 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
 ""2025-04-09 17:29:21,253 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
@@ -431,7 +431,7 @@ This generated password is for development use only. Your security configuration
 ""2025-04-09 17:29:21,939 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 17:29:21,969 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 ""2025-04-09 17:29:22,204 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
-""2025-04-09 17:29:22,212 INFO  [main] com.project.schoolmanagement.SchoolManagementApplication:Started SchoolManagementApplication in 1.951 seconds (JVM running for 2.836)
+""2025-04-09 17:29:22,212 INFO  [main] com.project.SchoolManagementApplication:Started SchoolManagementApplication in 1.951 seconds (JVM running for 2.836)
 ""2025-04-09 17:29:31,319 INFO  [http-nio-8080-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
 ""2025-04-09 17:29:55,000 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
 ""2025-04-09 17:29:55,001 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...

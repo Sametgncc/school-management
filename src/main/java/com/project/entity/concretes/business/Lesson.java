@@ -1,6 +1,5 @@
 package com.project.entity.concretes.business;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,18 +9,18 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.Set;
 
+
 @Entity
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-
 public class Lesson {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long lessonId;
 
     private String lessonName;
 
@@ -29,12 +28,7 @@ public class Lesson {
 
     private Boolean isCompulsory;
 
-    // Not: LessonProgram
-
     @JsonIgnore
-    @ManyToMany(mappedBy = "lessons",cascade = CascadeType.REMOVE)
+    @ManyToMany(mappedBy = "lessons", cascade = CascadeType.REMOVE)
     private Set<LessonProgram> lessonPrograms;
-
-
-
 }

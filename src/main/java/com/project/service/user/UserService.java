@@ -183,7 +183,7 @@ public class UserService {
     // Not : getByName() ***************************************************************
     public List<UserResponse> getUserByName(String name) {
 
-        return userRepository.getUserByNameContaining(name)//
+        return userRepository.getUserByNameContaining(name)//  veri girerken tam isim yazilmadigin de yazilan kismin bulundigi verileri gertirir
                 .stream()
                 .map(userMapper::mapUserToUserResponse)
                 .collect(Collectors.toList()) ;
