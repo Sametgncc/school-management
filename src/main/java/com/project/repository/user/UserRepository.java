@@ -36,8 +36,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     List<User> findByAdvisorTeacherId(Long id);
 
-//
-//    List<User> findAllByAdvisor(Boolean aTrue);
 
     @Query(value = "SELECT ( COUNT (u)>0 ) FROM User u WHERE u.userRole.roleType = ?1")
     boolean findStudent(RoleType roleType);

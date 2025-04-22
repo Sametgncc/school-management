@@ -138,22 +138,22 @@ public class UserMapper {
                 .build();
     }
 
-  //  public User mapStudentRequestToUser(StudentRequest studentRequest){
+    public User mapStudentRequestToUser(StudentRequest studentRequest){
 
-//       return User.builder()
-//                .fatherName(studentRequest.getFatherName())
-//                .motherName(studentRequest.getMotherName())
-//                .birthDay(studentRequest.getBirthDay())
-//                .birthPlace(studentRequest.getBirthPlace())
-//                .name(studentRequest.getName())
-//                .surname(studentRequest.getSurname())
-//                .password(studentRequest.getPassword())
-//                .username(studentRequest.getUsername())
-//                .ssn(studentRequest.getSsn())
-//                .email(studentRequest.getEmail())
-//                .phoneNumber(studentRequest.getPhoneNumber())
-//                .gender(studentRequest.getGender())
-//                .built_in(studentRequest.getBuiltIn())
-//                .build();
-    //}
+       return User.builder()
+                .fatherName(studentRequest.getFatherName())
+                .motherName(studentRequest.getMotherName())
+                .birthDay(studentRequest.getBirthDay())
+                .birthPlace(studentRequest.getBirthPlace())
+                .name(studentRequest.getName())
+                .surname(studentRequest.getSurname())
+                .password(studentRequest.getPassword())
+                .username(studentRequest.getUsername())
+                .ssn(studentRequest.getSsn())
+                .email(studentRequest.getEmail())
+                .phoneNumber(studentRequest.getPhoneNumber())
+                .gender(studentRequest.getGender())
+                .built_in(studentRequest.getBuiltIn())
+                .build();
+    }
 }
