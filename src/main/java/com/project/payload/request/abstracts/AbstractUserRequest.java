@@ -1,5 +1,5 @@
-package com.project.payload.request.abstracts;
 
+package com.project.payload.request.abstracts;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.project.entity.enums.Gender;
@@ -11,12 +11,12 @@ import lombok.experimental.SuperBuilder;
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 
+@SuperBuilder // Odev : bu anotazyon oncesinde , @SuperBuilder in cozdugu sorun nasil cozuluyordu.
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@SuperBuilder     // kalitim olan siniflardan hem alt hem de ust sinif ozelliklerini iceren bir builder olusturur
-                 // her iki class da super yazilir
 public abstract class AbstractUserRequest {
+
     @NotNull(message = "Please enter your username")
     @Size(min = 4, max = 16,message = "Your username should be at least 4 chars")
     @Pattern(regexp = "\\A(?!\\s*\\Z).+", message = "Your username must consist of the characters .")
@@ -38,7 +38,7 @@ public abstract class AbstractUserRequest {
     private LocalDate birthDay;
 
     @NotNull
-    @Pattern(regexp = "^(?!000|666)[0-8][0-9]{2}-(?!00)[0-9]{2}-(?!0000)[0-9]{4}$", // standart bir pattern googleden alindi
+    @Pattern(regexp = "^(?!000|666)[0-8][0-9]{2}-(?!00)[0-9]{2}-(?!0000)[0-9]{4}$",
             message = "Please enter valid SSN number")
     private String ssn;
 

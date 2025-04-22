@@ -7,15 +7,14 @@ import com.project.payload.messages.ErrorMessages;
 import com.project.payload.request.abstracts.AbstractUserRequest;
 import com.project.repository.user.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
 public class UniquePropertyValidator {
 
-    @Autowired
-    private UserRepository userRepository;
+
+    private final UserRepository userRepository;
 
     public void checkDuplicate(String username, String ssn , String phone , String email){
 
