@@ -147,4 +147,6 @@ public class EducationTermService {
     public EducationTerm findEducationTermById(Long educationTermId){
         return isEducationTermExist(educationTermId);
     }
+
+
 }
